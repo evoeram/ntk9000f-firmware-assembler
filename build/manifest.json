@@ -1,0 +1,37 @@
+{
+  "block_size": 4096,
+  "comparison_counts": {
+    "ALL_MATCH": 1,
+    "DIFFERENT": 226,
+    "U1_DUO_MATCH": 0,
+    "U2_DUO_MATCH": 0,
+    "UPDATES_MATCH": 29
+  },
+  "inputs": {
+    "duo_dump": {
+      "crc32": "37C8D99F",
+      "path": "inputs\\9000FDUO_DUMP.bin",
+      "sha256": "783b63f06a387b7a0224e2d763f85e6970f81b0cc141a4180f5cbc8a379fa4fc",
+      "size": 1048576
+    },
+    "update1": {
+      "crc32": "3F64A83F",
+      "path": "inputs\\9000F_update.bin",
+      "sha256": "cd403aff699c4d5a2eead67b2a5df65c03cc595652434d3a771d59a15ad1d9db",
+      "size": 909312
+    },
+    "update2": {
+      "crc32": "29B26F4A",
+      "path": "inputs\\9000F_update2.bin",
+      "sha256": "3b2c1911b3a61cef59081984a50d130e2f56485dd146c65c7771bc5aa1941575",
+      "size": 929792
+    }
+  },
+  "output": {
+    "crc32": "5281FDF1",
+    "path": "build\\F9000_final_full_firmware.bin",
+    "sha256": "ff23cac4a4a51bc071f47134658958ea982414096996cfa268ad8e91809522a3",
+    "size": 929792
+  },
+  "total_blocks": 256
+}

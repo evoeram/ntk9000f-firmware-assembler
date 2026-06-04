@@ -1,0 +1,24 @@
+BLDR reverse engineering (heuristic)
+
+F9000 update #1: size=909312 (0xDE000) crc32=3F64A83F
+F9000 update #2: size=929792 (0xE3000) crc32=29B26F4A
+F9000DUO dump: size=1048576 (0x100000) crc32=37C8D99F
+
+Header DWORDs with differing values (little-endian):
+0x18: u1=0x000003FC u2=0x00000424 duo=0x000003F8
+0x28: u1=0x000003A3 u2=0x000003B6 duo=0x000003A3
+
+Likely fields:
+0x18 changes between all known images and may be an image-specific length/check field.
+0x30 differs between update #2 and update #1/DUO in the original sample set.
+
+Probable partition boundary candidates:
+0x800
+0x1000
+0x2000
+0x4000
+0xDE000
+0xE3000
+0x100000
+
+Warning: this is a heuristic report, not a firmware safety or authenticity validation.
